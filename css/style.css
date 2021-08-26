@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+	display: flex; 
+	background: radial-gradient(circle at top left, #1E2335, #484B59);
+    justify-content: space-around;
+    padding: 15px 0px;
+    color: #9BA1B6;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 0rem 0.5rem 1rem rgba(0,0,0,0.3);	
+}
+
+/* logo */
+nav .navbar-logo {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+
+/*list*/
+nav ul {
+	display: flex;
+	list-style: none;
+	width: 28%;
+	justify-content: space-between;
+}
+
+nav ul li a {
+	color: #9BA1B6;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #DCDDE0;
+    text-shadow: 2px 2px #000000;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.01em;
+}
+
+/* MENU BAR */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* checkbox */
+.menu-toggle input {
+    position: absolute;
+    width: 25px;
+    height: 28px;
+    opacity: 0;
+    top: -4px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* strip */
+.menu-toggle span {
+    display: block;
+    background-color: #9BA1B6;
+    width: 25px;
+    height: 4px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* transform */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+	transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+	background-color: #DCDDE0;
+    transform: rotate(21deg) translate(2px, -1px);
+
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+	background-color: #DCDDE0;
+    transform: rotate(-21deg) translate(2px, 1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0) translate(25px, 0);
+}
+
+
+/* RESPONSIVE */
+/*tab */
+@media screen and (max-width: 760px) {
+    nav ul {
+    	width: 35%;
+    }
+}
+/* mobile */
+@media screen and (max-width: 576px) {
+	.menu-toggle {
+		display: flex;
+	}
+    nav ul {
+    	position: absolute;
+    	flex-direction: column;
+    	background-color: #484B59;
+    	right: 0;
+        top: 0;
+        width: 30%;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: -1;
+        transform: translate(100%, 0);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+    nav ul.appear {
+    	opacity: 1;
+    	transform: translate(0,0);
+    }
+}
