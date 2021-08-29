@@ -1,3 +1,4 @@
+/* NAVBAR */
 const menuToggle =  document.querySelector('.menu-toggle input');
 const navbar = document.querySelector('nav ul');
 
