@@ -173,16 +173,16 @@ nav ul li a:hover {
 .project .content .box input:checked ~ ul:nth-child(4) {
     opacity: 1;
     z-index: 0;
+    height: 24vh;
 }
 
 /* creator box */
 .project .content ul {
     background-color: #13182C;
     margin: 1rem;
-    padding: 0.5rem;
+    padding: 1.5rem;
     position: absolute;
-    height: 24vh;
-    padding-top: 2rem;
+    height: 21vh;
     border-radius: 5px;
     border: 5px solid #1E2335;
     opacity: 0;
@@ -274,6 +274,11 @@ h3 {
 h5 {
     font-size: 1rem;
     padding: 1rem 0;
+}
+
+h6 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 /* RESPONSIVE */
