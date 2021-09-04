@@ -92,7 +92,7 @@ body {
 nav ul {
 	display: flex;
 	list-style: none;
-	width: 28%;
+	width: 38%;
 	justify-content: space-between;
 }
 
@@ -122,6 +122,7 @@ nav ul li a:hover {
     width: 300px;
     height: 300px;
     border-radius: 10%;
+    margin-left: 2rem;
 }
 
 /* PROJECT */
@@ -219,6 +220,38 @@ nav ul li a:hover {
     color: #C0C0C0;
 }
 
+/* FEEDBACK */
+/* feedback desc */
+.feedback .content {
+    text-align: center;
+}
+
+.feedback .content p {
+    padding-bottom: 1rem;
+}
+
+.feedback .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback .content form textarea {
+    position: relative;
+    border-radius: 2%;
+    padding: 10px;
+    box-shadow: 2px 4px 5px;
+}
+
+.feedback .content form button {
+    background-color: #1E2335;
+    color: #ffffff;
+    border: none;
+    border-radius: 25%;
+    width: 6rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
 /* CONTACT */
 
 .contact {
@@ -251,7 +284,7 @@ nav ul li a:hover {
 /* UMUM */
 section {
     min-height: 65vh;
-    padding: 5% 15%;
+    padding: 5% 13%;
 }
 
 html {
@@ -287,7 +320,7 @@ h6 {
 
 	/* NAVBAR SLISE */
     nav ul {
-    	width: 35%;
+    	width: 50%;
     }
     /* IMAGE PROFILE */
     .about {
@@ -299,11 +332,18 @@ h6 {
         height: 200px;
         border-radius: 50%;
         padding: 2rem 0;
+        margin-right: 2rem;
 }
     /* IMAGE PROJECT */
     .project .content {
         flex-direction: column;
+        
     }
+    
+    .project .content .box img {
+        width: 100%;
+    }
+
     .project .content a img {
         margin: 0.2rem 0;
     }
@@ -326,7 +366,7 @@ h6 {
         height: 100vh;
         justify-content: space-around;
         align-items: center;
-        z-index: 0;
+        z-index: 1;
         transform: translate(100%, 0);
         transition: all 0.5s;
         opacity: 0;
