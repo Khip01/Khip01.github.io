@@ -239,7 +239,11 @@ nav ul li a:hover {
     position: relative;
     border-radius: 2%;
     padding: 10px;
-    box-shadow: 2px 4px 5px;
+}
+
+.feedback .content form textarea:hover {
+    box-shadow: 2px 4px 5px #000000;
+    transition: all 0.2s ease-in-out;
 }
 
 .feedback .content form button {
@@ -250,6 +254,16 @@ nav ul li a:hover {
     width: 6rem;
     height: 3rem;
     margin: 1rem;
+}
+
+
+.feedback .content form button:hover {
+    box-shadow: 2px 4px 5px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.feedback .content form button:active {
+    background: linear-gradient(135deg, #1E2335, #4F556C);
 }
 
 /* CONTACT */
@@ -284,7 +298,7 @@ nav ul li a:hover {
 /* UMUM */
 section {
     min-height: 65vh;
-    padding: 5% 13%;
+    padding: 3% 13%;
 }
 
 html {
