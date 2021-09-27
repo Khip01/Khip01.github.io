@@ -131,7 +131,11 @@ nav ul li a:hover {
     width: 300px;
     height: 300px;
     border-radius: 10%;
+<<<<<<< HEAD
     box-shadow: 2px 4px 5px #000000;
+=======
+    margin-left: 2rem;
+>>>>>>> 5b4242661e203c6c65496b6104da1230b6a8e2b4
 }
 
 /* PROJECT */
@@ -357,17 +361,28 @@ h6 {
         border-radius: 50%;
         padding: 2rem 0;
         margin-right: 2rem;
+<<<<<<< HEAD
         box-shadow: none;
+=======
+>>>>>>> 5b4242661e203c6c65496b6104da1230b6a8e2b4
 }
     /* IMAGE PROJECT */
     .project .content {
         flex-direction: column;
         
+<<<<<<< HEAD
     }
     
     .project .content .box img {
         width: 100%;
     }
+=======
+    }
+    
+    .project .content .box img {
+        width: 100%;
+    }
+>>>>>>> 5b4242661e203c6c65496b6104da1230b6a8e2b4
 
     .project .content a img {
         margin: 0.2rem 0;
