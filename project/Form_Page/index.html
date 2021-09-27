@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Glyphicon Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Form - Sign Up</title>
+  </head>
+  <body>
+    <h1>
+      <b>Sign-Up</b>
+    </h1>
+    <div id="card">
+            <form>
+               <p><b>Name</b></p>
+               <div class="col">
+                  <input type="name" name="first-name" placeholder="First Name" required />
+                  <input type="name" name="last-name" placeholder="Last Name" />
+                </div>
+                <p><b>Username</b></p>
+                <input type="Username" name="name" placeholder="ex: user" required />
+
+                <p><b>E-mail</b></p>
+                <input type="email" name="email" placeholder="ex: yourAccount@gmail.com" required />
+                
+                <p><b>Password</b></p>
+                <div class="col">
+                    <input type="password" name="pass" id="pass" required />
+                    <div onclick="showpass()" id="passop" class="button"><span class="glyphicon glyphicon-eye-open"></span></div>
+                    <div onclick="showpass()" id="passcls" class="button" style="display: none;"><span class="glyphicon glyphicon-eye-close"></span></div>
+                </div>
+                
+
+                <p><b>Gender</b></p>
+                <select name="gender" >
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select></b></p>
+
+                <p><b>Age (y.o)</b></p>
+                <input type="number" name="age" placeholder="Input Number" required />
+
+                <p><b>Phone (Indonesia)</b></p>
+                <p><small>*optional (11 digit "X" without "0")</small><br></p>
+                <input type="tel" id="phone" name="phone" placeholder="62XXXXXXXXXXX" pattern="[1-9]{2}[0-9]{3}[0-9]{4}[0-9]{4}"><br><br>
+
+                <center><input type="submit" id="button"></center>
+            </form>
+        </div>
+  	
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+    <script type="text/javascript">
+    	//Show pass
+        function showpass(){
+        	var data = document.getElementById('pass');
+        	if (data.type=='password'){
+        		data.type = 'text';
+        		passop.style.display = "none";
+        		passcls.style.display = "block";
+        	}else{
+        		data.type = 'password';
+        		passop.style.display = "block";
+        		passcls.style.display = "none";
+        	}
+        }
+    </script>      
+  </body>
+</html>

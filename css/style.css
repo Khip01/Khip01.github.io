@@ -92,7 +92,7 @@ body {
 nav ul {
 	display: flex;
 	list-style: none;
-	width: 28%;
+	width: 38%;
 	justify-content: space-between;
 }
 
@@ -110,6 +110,15 @@ nav ul li a:hover {
 
 /* PROFIL */
 
+#about {
+    background-image: url("../images/Background_Profile.jpg");
+    background-size: cover;
+    color: #D6D6D6;
+    text-shadow: 2px 2px #000000;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
 .about {
     display: flex;
     align-items: center;
@@ -122,6 +131,7 @@ nav ul li a:hover {
     width: 300px;
     height: 300px;
     border-radius: 10%;
+    box-shadow: 2px 4px 5px #000000;
 }
 
 /* PROJECT */
@@ -173,7 +183,7 @@ nav ul li a:hover {
 .project .content .box input:checked ~ ul:nth-child(4) {
     opacity: 1;
     z-index: 0;
-    height: 24vh;
+    height: 27vh;
 }
 
 /* creator box */
@@ -219,12 +229,59 @@ nav ul li a:hover {
     color: #C0C0C0;
 }
 
+/* FEEDBACK */
+/* feedback desc */
+.feedback .content {
+    text-align: center;
+}
+
+.feedback .content p {
+    padding-bottom: 1rem;
+}
+
+.feedback .content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback .content form textarea {
+    position: relative;
+    border-radius: 2%;
+    padding: 10px;
+}
+
+.feedback .content form textarea:hover {
+    box-shadow: 2px 4px 5px #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.feedback .content form button {
+    background-color: #1E2335;
+    color: #ffffff;
+    border: none;
+    border-radius: 25%;
+    width: 6rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+
+.feedback .content form button:hover {
+    box-shadow: 2px 4px 5px #000000;
+    transition: all 0.2s ease-in-out;
+    background: linear-gradient(135deg, #1E2335, #4F556C);
+}
+
+.feedback .content form button:active {
+
+}
+
 /* CONTACT */
 
 .contact {
     min-height: 12vh;
     background: #0C0F18;
-    color: #ffffff;
+    color: #D6D6D6;
 }
 
 .contact .content {
@@ -238,7 +295,7 @@ nav ul li a:hover {
 }
 
 .contact .content .content-box ul li a {
-    color: #ffffff;
+    color: #D6D6D6;
 }
 
 .contact .content .content-box ul li a:hover {
@@ -251,7 +308,7 @@ nav ul li a:hover {
 /* UMUM */
 section {
     min-height: 65vh;
-    padding: 5% 15%;
+    padding: 3% 13%;
 }
 
 html {
@@ -287,7 +344,7 @@ h6 {
 
 	/* NAVBAR SLISE */
     nav ul {
-    	width: 35%;
+    	width: 50%;
     }
     /* IMAGE PROFILE */
     .about {
@@ -299,11 +356,19 @@ h6 {
         height: 200px;
         border-radius: 50%;
         padding: 2rem 0;
+        margin-right: 2rem;
+        box-shadow: none;
 }
     /* IMAGE PROJECT */
     .project .content {
         flex-direction: column;
+        
     }
+    
+    .project .content .box img {
+        width: 100%;
+    }
+
     .project .content a img {
         margin: 0.2rem 0;
     }
@@ -326,14 +391,14 @@ h6 {
         height: 100vh;
         justify-content: space-around;
         align-items: center;
-        z-index: 0;
+        z-index: 1;
         transform: translate(100%, 0);
         transition: all 0.5s;
         opacity: 0;
     }
 
     nav ul.appear {
-    	opacity: 1;
+    	opacity: 0.9;
     	transform: translate(0,0);
     }
 

@@ -4,6 +4,8 @@
 -->
 <html>
 <head>
+	<!-- Responsive -->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- FONT -->
@@ -12,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono:wght@500&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Dokumen</title>
+    <title>Khip01 - Biodata</title>
 </head>
 <body>
 	<!-- ---NAVBAR--- -->
@@ -21,7 +23,9 @@
         <ul>
         	<li><a href="#about">About</a></li>
     	    <li><a href="#project">Project</a></li>
-    	    <li><a href="#contact">Contact</a></li>
+    	    <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
         </ul>
     </nav>
 
@@ -34,7 +38,9 @@
         <ul>
         	<li><a href="#about">About</a></li>
     	    <li><a href="#project">Project</a></li>
-    	    <li><a href="#contact">Contact</a></li>
+    	    <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+
         </ul>
 
         <div class="menu-toggle">
@@ -46,8 +52,8 @@
 	</nav>
 	
     
-    <!-- PROFILE -->
-    <div id="about"></div>
+    <!-- PROFILE ABOUT -->
+    <div id="about">
     <h1>ABOUT ME</h1>
     <section class="about">
     	<div class="content">
@@ -67,15 +73,16 @@
     		<img src="images/profile-image.jpg" alt="Gambar Profil">
     	</div>
     </section>
+    </div>
 
     <!-- PROJECT -->
-    <div id="project"></div>
+    <div id="project">
     <h1>PROJECT</h1>
     <section class="project">
     	<h3>~Personally made</h3>
     	<div class="content">
     		<div class="box">
-    			<i class="fas fa-times-circle"></i>
+    			<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     			<input type="checkbox" />
     			<img src="images/Indiv_Merdekaan.jpg">
     			<ul type="none">
@@ -88,11 +95,26 @@
     				<li class="button"><a href="project/Indiv_Merdekaan/index.html" target="_blank">VIEW</a></li>
     			</ul>
     		</div>
+            <div class="box">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                <input type="checkbox" />
+                <img src="images/Form_Page.jpg">
+                <ul type="none">
+                    <li align="center"><h6>FORM PAGE</h6></li>
+                    <li class="creator">Creator :</li>
+                    <li><a href="https://github.com/Khip01" target="_blank">Aakhif Athallah</a> (
+                        <!-- rainbow effect -->
+                        <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+                    )</li>
+                    <li class="button"><a href="project/Form_Page/index.html" target="_blank">VIEW</a></li>
+                </ul>
+            </div>
+
     	</div>
     	<h3>~My participation in the team</h3>
     	<div class="content">
     		<div class="box">
-    			<i class="fas fa-times-circle"></i>
+    			<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     			<input type="checkbox" />
     			<img src="images/Team_VideoAudio.jpg">
     			<ul type="none">
@@ -108,7 +130,7 @@
     			</ul>
     		</div>
     		<div class="box">
-    			<i class="fas fa-times-circle"></i>
+    			<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     			<input type="checkbox" />
     			<img src="images/Team_RedStore.jpg">
     			<ul type="none">
@@ -125,9 +147,26 @@
     		</div>
     	</div>
     </section>
+    </div>
+
+    <!-- FEEDBACK MESSAGE TO CREATOR -->
+    <div id="feedback">
+    <h1>FEEDBACK</h1>
+    <section class="feedback">
+        <div class="content">
+            <p>
+                Is there something wrong with the website? Give me feedback :D<br>Thank you
+            </p>  
+            <form>
+                <textarea name="feedback" class="form-control w-100" cols="70" rows="17" id="message-wa" placeholder="Input Your Whatsapp Message Here"></textarea>
+                <button type="button" id="send-message-wa" data-wa="+6285536363146" class=" float-end btn btn-success">Send</button>
+            </form>
+        </div>
+    </section>
+    </div>
     
     <!-- CONTACT -->
-    <div id="contact"></div>
+    <div id="contact">
     <section class="contact">
     	    <h5>
     	        Ingin kenal lebih dekat? Mabar ML? Ikuti dan hubungi saya
@@ -158,8 +197,25 @@
     		</div>
     	</div>
     </section>
+    </div>
 
     <!-- JS -->
+    <!-- import js-->
     <script src="js/script.js"></script>
+
+    <!-- Feedback js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    $(function(){
+        $('#send-message-wa').click(function(){
+            var vals = $('#message-wa').val();
+            window.location.assign('https://wa.me/'+$(this).data('wa')+'?text='+vals);
+        });
+    });
+    </script>
+
 </body>
 </html>
