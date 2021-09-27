@@ -67,4 +67,16 @@ form {
 	transition: all 0.2s ease-in-out;
 }
 
+/* Responsive */
+@media screen and (max-width: 760px) {
+    #card {
+    	margin: 0 2rem 2rem;
+    }
+}
 
+@media screen and (max-width: 576px) {
+    #card {
+    	border-radius: 0%;
+    	margin: 5rem 0;
+    }
+}
