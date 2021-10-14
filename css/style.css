@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	position: fixed;
 	display: flex; 
-	background: radial-gradient(circle at top left, #1E2335, #696E88);
+	background: radial-gradient(circle at top left, #0d0f14, #303338);
     justify-content: space-around;
     padding: 15px 0px;
     color: #9BA1B6;
@@ -97,7 +97,7 @@ nav ul {
 }
 
 nav ul li a {
-	color: #9BA1B6;
+	color: #686b76;
 	text-decoration: none;
 }
 
@@ -280,7 +280,7 @@ nav ul li a:hover {
 
 .contact {
     min-height: 12vh;
-    background: #0C0F18;
+    background: #0b0d12;
     color: #D6D6D6;
 }
 
