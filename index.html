@@ -10,74 +10,509 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- FONT -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono:wght@500&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Khip01 - Biodata</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Mono:wght@500&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Logo Favicon-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <title>Khip01 - Biodata</title>
 </head>
 <body>
-	<!-- ---NAVBAR--- -->
+
+    <div class="navbarSett">
+    <!-- ---NAVBAR--- -->
     <!-- navbar slide -->
-	<nav>
+    <nav>
         <ul>
-        	<li><a href="#about">About</a></li>
-    	    <li><a href="#project">Project</a></li>
-    	    <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#feedback">Feedback</a></li>
             <li><a href="#contact">Contact</a></li>
             
         </ul>
     </nav>
 
     <!-- navbar top/atas -->
-	<nav class="navbar-top">
-		<div class="navbar-logo">
-        	<h4>My Profile</h4>
+    <nav id="navChangeId" class="navbar-top">
+        <div class="navbar-logo">
+            <h4>Khip01 - Profile</h4>
         </div>
 
         <ul>
-        	<li><a href="#about">About</a></li>
-    	    <li><a href="#project">Project</a></li>
-    	    <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#feedback">Feedback</a></li>
             <li><a href="#contact">Contact</a></li>
 
         </ul>
 
         <div class="menu-toggle">
-        	<input type="checkbox" />
-        	<span></span>
-        	<span></span>
-        	<span></span>
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-	</nav>
+    </nav>
+    </div> <!-- navbarSett -->
 	
-    
     <!-- PROFILE ABOUT -->
     <div id="about">
     <h1>ABOUT ME</h1>
     <section class="about">
-    	<div class="content">
-    		<h2>
-    			Hello 👋
-    		</h2>
-    		<p>
-    			Hi, saya Akhmad Aakhif A. <br>
-    		</p>
-    		<p>
-    			Hanyalah laki-laki yang berumur 16 tahun, pelajar di SMKN 1 Purwosari.<br>
-    			Selamat datang di profil website saya, salam kenal.
-    		</p>
+        <div class="content">
+            <h2>
+                Hello 👋
+            </h2>
+            <p>
+                Hi, I'm Akhmad Aakhif A. <br>
+            </p>
+            <p>
+                Welcome to my portfolio, want to get acquainted?
+                <form >
+                    <label for="link">~$ cat About_Me</label>
+                    <input type="checkbox" name="pressTextBio" onclick="navColl()" id="link">
+                </form> 
+                <div id="contentBoxBio">
+                    <div class="contentGroup">
+                        <div class="first-text">Hello everyone👋</div>
+
+                        <div class="second-text">My Name is Akhmad Aakhif A.</div>
+
+                        <div class="third-text">I am a novice programmer and made this portfolio to document the results of the projects that I have made.</div>
+
+                        <div class="fourth-text">Yes, that's all my introduction :P</div>
+                        
+                        <div class="fifth-text">If there is something you want to talk about please contact my Gmail, thank you.</div>
+                        
+                        <div class="sixth-text">Why are you still here?</div>
+
+                        <div class="seventh-text">OK, please press the button CLOSE above 👆</div>  
+                        
+                        <div class="eighth-text">Don't you have anything to do?</div>                      
+
+                        <div class="ninth-text">Ah, just leave it.</div>
+
+                        <ul type="none">
+                            <li>
+                                <form >
+                                    <label for="link">CLOSE</label>
+                                    <input type="checkbox" name="pressTextBio" id="link">
+                                </form> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </p>
         </div>
-
         <div class="image">
-    		<img src="images/profile-image.jpg" alt="Gambar Profil">
-    	</div>
+            <img src="images/profile-image.jpg" alt="Gambar Profil">
+        </div>
     </section>
-    </div>
+    </div> <!-- about -->
 
-    <!-- PROJECT -->
+    <!-- PROJECT V2 -->
     <div id="project">
-    <h1>PROJECT</h1>
+    <section style="padding: 5rem 0 0 0">
+    <h3 class="wordCarousel">
+        <span>PROJECT : </span>
+        <div>
+            <!-- Use classes 2,3,4, or 5 to match the number of words -->
+            <ul class="flip2">
+                <li>Personally Made</li>
+                <li>My Participation in the Team</li>
+            </ul>
+        </div>
+    </h3>
+
+    <!-- TEST CARD!!!  -->
+
+    <div class="container" style="padding-top: 4rem">
+  <div class="card">
+    <h2>Personally Made</h2>
+    <a class="goto"><i href="#about" class="fas fa-arrow-right" onclick="displayContent1()"></i></a>
+    <p>Yeah it's kind of a solo project</p>
+    <div class="pic"></div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="social">
+      <a href="https://www.facebook.com/aakhif.athallah" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <i class="fab fa-twitter"></i>
+      <a href="https://instagram.com/khff.athll?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Khip01" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <a class="goto"><button onclick="displayContent1()"></button></a>
+  </div>
+
+    <div class="card card2">
+    <h2>My participation in the Team</h2>
+    <a class="goto"><i class="fas fa-arrow-right" onclick="displayContent2()"></i></a>
+    <p>Doing it with friends is awesome</p>
+    <div class="pic"></div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="social">
+      <a href="https://www.facebook.com/aakhif.athallah" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <i class="fab fa-twitter"></i>
+      <a href="https://instagram.com/khff.athll?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Khip01" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <a class="goto"><button onclick="displayContent2()"></button></a>
+    
+  </div>
+</div>
+
+<!-- <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" alt=""></a> -->
+
+
+    <!-- TEST CARD!!!/////  -->
+</section>
+</div> <!-- project -->
+
+
+
+    <!--  TEST CHILD CARD -->
+
+<h1 id="title1">PERSONALLY MADE</h1>
+<div id="cardChild1" class="card-child">
+<main role="main">
+  <div class="product">
+    <figure>
+      <img src="images/Indiv_Merdekaan.jpg" alt="Product Image" class="product-image">
+        </figure>
+
+      <div class="product-description">
+
+        <div class="info">
+          <h1 class="plain">MERDEKAAN</h1>
+          <p>
+            Simple website using html and css (inline).
+          </p>
+          <p class="moreInfo">
+            Website that I created as a beginner. The topic is about freedom in learning or "MERDEKAAN DALAM BELAJAR".
+          </p>
+          <p class="platformInfo">
+            <b>Type</b> : Web<br>
+            <b>Runs on</b> : Web browser
+          </p>
+          <p class="creatorInfo">
+            Creator : 
+            <li><a href="https://github.com/Khip01" target="_blank"><b>Akhmad Aakhif A</b></a> 
+            (
+              <!-- rainbow effect -->
+              <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+            )</li>
+          </p>
+        </div>
+      </div>
+
+      <div class="product-sidebar">
+        <button class="openfile">
+          <span><a href="project/Indiv_Merdekaan/index.html" target="_blank">OPEN FILE</a></span>
+        </button>
+
+        <button class="info">
+          <span>MORE INFO</span>
+        </button>
+
+        <button class="platform">
+          <span>PLATFORM</span>
+        </button>
+
+        <button class="colors">
+          <span>
+            <a href="" class="color gold"></a>
+            <a href="" class="color white"></a>
+            <a href="" class="color red"></a>
+          </span>
+        </button>
+      </div>
+      </div>
+    </main>
+
+<main role="main">
+  <div class="product">
+    <figure>
+      <img src="images/Form_Page.jpg" alt="Product Image" class="product-image">
+        </figure>
+
+      <div class="product-description">
+
+        <div class="info">
+          <h1 class="plain">FORM PAGE</h1>
+          <p>
+            Simple forms page to learn about creating your own forms.
+          </p>
+          <p class="moreInfo">
+            An example of a simple form page that I created as a beginner to learn to use forms.
+          </p>
+          <p class="platformInfo">
+            <b>Type</b> : Web<br>
+            <b>Runs on</b> : Web browser
+          </p>
+          <p class="creatorInfo">
+            Creator : 
+            <li><a href="https://github.com/Khip01" target="_blank"><b>Akhmad Aakhif A</b></a> 
+            (
+              <!-- rainbow effect -->
+              <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+            )</li>
+          </p>
+        </div>
+      </div>
+
+      <div class="product-sidebar">
+        <button class="openfile">
+          <span><a href="project/Form_Page/index.html" target="_blank">OPEN FILE</a></span>
+        </button>
+
+        <button class="info">
+          <span>MORE INFO</span>
+        </button>
+
+        <button class="platform">
+          <span>PLATFORM</span>
+        </button>
+
+        <button class="colors">
+          <span>
+            <a href="" class="color gold"></a>
+            <a href="" class="color white"></a>
+            <a href="" class="color red"></a>
+          </span>
+        </button>
+      </div>
+      </div>
+    </main>
+
+<main role="main">
+  <div class="product">
+    <figure>
+      <img src="images/RedStore_App.jpg" alt="Product Image" class="product-image">
+        </figure>
+
+      <div class="product-description">
+
+        <div class="info">
+          <h1 class="plain">REDSTORE (APP)</h1>
+          <p>
+            Creating a basic Online Store Application using Flutter and Laravel
+          </p>
+          <p class="moreInfo">
+            RESTORE (APP) is an Online Store application to create transaction applications that implement a database system.
+          </p>
+          <p class="platformInfo">
+            <b>Type</b> : App<br>
+            <b>Runs on</b> : Android/IOS
+          </p>
+          <p class="creatorInfo">
+            Creator : 
+            <li><a href="https://github.com/Khip01" target="_blank"><b>Akhmad Aakhif A</b></a> 
+            (
+              <!-- rainbow effect -->
+              <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+            )</li>
+          </p>
+        </div>
+      </div>
+
+      <div class="product-sidebar">
+        <button class="openfile">
+          <span><a href="https://github.com/Khip01/RedStore-App" target="_blank">OPEN FILE</a></span>
+        </button>
+
+        <button class="info">
+          <span>MORE INFO</span>
+        </button>
+
+        <button class="platform">
+          <span>PLATFORM</span>
+        </button>
+
+        <button class="colors">
+          <span>
+            <a href="" class="color gold"></a>
+            <a href="" class="color white"></a>
+            <a href="" class="color red"></a>
+          </span>
+        </button>
+      </div>
+      </div>
+    </main>
+</div>
+
+<h1 id="title2">MY PARTICIPATION IN THE TEAM</h1>
+<div id="cardChild2" class="card-child">
+<main role="main">
+  <div class="product">
+    <figure>
+      <img src="images/Team_VideoAudio.jpg" alt="Product Image" class="product-image">
+        </figure>
+
+      <div class="product-description">
+
+        <div class="info">
+          <h1 class="plain">VIDEOAUDIO</h1>
+          <p>
+            Simple website about audio and video.
+          </p>
+          <p class="moreInfo">
+            Collaboration with friends to learn to create a simple website that can play Audio and Video.
+          </p>
+          <p class="platformInfo">
+            <b>Type</b> : Web<br>
+            <b>Runs on</b> : Web browser
+          </p>
+          <p class="creatorInfo">
+            Creator : 
+            <li><a href="https://github.com/irfanfarid40404" target="_blank"><b>Irfan Farid</b></a> (
+              <!-- rainbow effect -->
+              <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+                )</li>
+            <li><a href="https://github.com/Khip01" target="_blank"><b>Akhmad Aakhif A</b></a> (<span style="color:#FFD700;"> comrade </span>) </li>
+            <li><b>Friyo Yustanto</b> (<span style="color: #C0C0C0;"> comrade </span>)</li>
+          </p>
+        </div>
+      </div>
+
+      <div class="product-sidebar">
+        <button class="openfile">
+          <span>OPEN FILE</span>
+        </button>
+
+        <button class="info">
+          <span>MORE INFO</span>
+        </button>
+
+        <button class="platform">
+          <span>PLATFORM</span>
+        </button>
+
+        <button class="colors">
+          <span>
+            <a href="" class="color gold"></a>
+            <a href="" class="color white"></a>
+            <a href="" class="color red"></a>
+          </span>
+        </button>
+      </div>
+      </div>
+    </main>
+
+<main role="main">
+  <div class="product">
+    <figure>
+      <img src="images/Team_RedStore.jpg" alt="Product Image" class="product-image">
+        </figure>
+
+      <div class="product-description">
+
+        <div class="info">
+          <h1 class="plain">REDSTORE (WEB)</h1>
+          <p>
+            REDSTORE (WEB) is a web for learning to create an online store.
+          </p>
+          <p class="moreInfo">
+            Make a REDSTORE web with friends to learn to create an online web store with various products that have been presented.
+          </p>
+          <p class="platformInfo">
+            <b>Type</b> : Web<br>
+            <b>Runs on</b> : Web browser
+          </p>
+          <p class="creatorInfo">
+            Creator : 
+            <li><a href="https://github.com/irfanfarid40404" target="_blank"><b>Irfan Farid</b></a> (
+              <!-- rainbow effect -->
+              <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+                )</li>
+            <li><a href="https://github.com/Khip01" target="_blank"><b>Akhmad Aakhif A</b></a> (<span style="color:#FFD700;"> comrade </span>) </li>
+            <li><b>Friyo Yustanto</b> (<span style="color: #C0C0C0;"> comrade </span>)</li>
+          </p>
+        </div>
+      </div>
+
+      <div class="product-sidebar">
+        <button class="openfile">
+          <span>OPEN FILE</span>
+        </button>
+
+        <button class="info">
+          <span>MORE INFO</span>
+        </button>
+
+        <button class="platform">
+          <span>PLATFORMS</span>
+        </button>
+
+        <button class="colors">
+          <span>
+            <a href="" class="color gold"></a>
+            <a href="" class="color white"></a>
+            <a href="" class="color red"></a>
+          </span>
+        </button>
+      </div>
+      </div>
+    </main>
+</div>
+
+    <!--  TEST CHILD CARD/////  -->
+
+    <!-- PROJECT V2///// -->
+
+
+    <!-- PROJECT (OLD) -->
+<!--     <h1>PROJECT</h1>
     <section class="project">
     	<h3>~Personally made</h3>
     	<div class="content">
@@ -89,7 +524,7 @@
     				<li align="center"><h6>MERDEKAAN</h6></li>
     				<li class="creator">Creator :</li>
     				<li><a href="https://github.com/Khip01" target="_blank">Aakhif Athallah</a> (
-                        <!-- rainbow effect -->
+                        
     					<font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
     				)</li>
     				<li class="button"><a href="project/Indiv_Merdekaan/index.html" target="_blank">VIEW</a></li>
@@ -103,10 +538,24 @@
                     <li align="center"><h6>FORM PAGE</h6></li>
                     <li class="creator">Creator :</li>
                     <li><a href="https://github.com/Khip01" target="_blank">Aakhif Athallah</a> (
-                        <!-- rainbow effect -->
+                        
                         <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
                     )</li>
                     <li class="button"><a href="project/Form_Page/index.html" target="_blank">VIEW</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                <input type="checkbox" />
+                <img src="images/RedStore_App.jpg">
+                <ul type="none">
+                    <li align="center"><h6>REDSTORE (APP)</h6></li>
+                    <li class="creator">Creator :</li>
+                    <li><a href="https://github.com/Khip01" target="_blank">Aakhif Athallah</a> (
+                        
+                        <font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
+                    )</li>
+                    <li class="button"><a href="https://github.com/Khip01/RedStore-App" target="_blank">VIEW</a></li>
                 </ul>
             </div>
 
@@ -121,7 +570,7 @@
     				<li align="center"><h6>VIDEOAUDIO</h6></li>
     				<li class="creator">Creator :</li>
     				<li><a href="https://github.com/irfanfarid40404" target="_blank">Irfan Farid</a> (
-    					<!-- rainbow effect -->
+    					
     					<font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
     				    )</li>
     				<li><a href="https://github.com/Khip01" target="_blank">Aakhif Athallah</a> (<span class="gold"> comrade </span>) </li>
@@ -134,10 +583,10 @@
     			<input type="checkbox" />
     			<img src="images/Team_RedStore.jpg">
     			<ul type="none">
-    				<li align="center"><h6>REDSTORE</h6></li>
+    				<li align="center"><h6>REDSTORE (WEB)</h6></li>
     				<li class="creator">Creator :</li>
     				<li><a href="https://github.com/irfanfarid40404" target="_blank">Irfan Farid</a> (
-                        <!-- rainbow effect -->
+                        
     					<font color='#FF0059'>m</font><font color='#FF8100'>a</font><font color='#A1FF00'>s</font><font color='#00FF57'>t</font><font color='#00C1FF'>e</font><font color='#0C00FF'>r</font>
     				)</li>
     				<li><a href="https://github.com/Khip01" target="_blank">Aakhif Athallah</a> (<span class="gold"> comrade </span>) </li>
@@ -147,57 +596,58 @@
     		</div>
     	</div>
     </section>
-    </div>
-
+ -->
     <!-- FEEDBACK MESSAGE TO CREATOR -->
     <div id="feedback">
     <h1>FEEDBACK</h1>
     <section class="feedback">
         <div class="content">
             <p>
-                Is there something wrong with the website? Give me feedback :D<br>Thank you
+                Is there something wrong with the website? Give me feedback :D<br>Thank you <b>(Wrong number, I'll fix it later. Just give me feedback via gmail)</b>
             </p>  
             <form>
                 <textarea name="feedback" class="form-control w-100" cols="70" rows="17" id="message-wa" placeholder="Input Your Whatsapp Message Here"></textarea>
-                <button type="button" id="send-message-wa" data-wa="+6285536363146" class=" float-end btn btn-success">Send</button>
+                <button type="button" id="send-message-wa" data-wa="+6283192753645" class=" float-end btn btn-success">Send</button>
             </form>
         </div>
     </section>
-    </div>
+    </div> <!-- feedback -->
     
     <!-- CONTACT -->
     <div id="contact">
     <section class="contact">
     	    <h5>
-    	        Ingin kenal lebih dekat? Mabar ML? Ikuti dan hubungi saya
+    	        Want to know more? Follow and contact me
     	    </h5>
     	<div class="content">  		
     		<div class="content-box">
     			<h5>Contact</h5>
     			<ul type="none">
-    				<li><i class="fas fa-phone"></i>  +62 855-3636-3146</li>
+    				<li><i class="fas fa-phone"></i>  +62 8**-****-****</li>
     				<li><i class="fas fa-envelope"></i>  aakhifathallah24@gmail.com</li>
     			</ul>
     		</div>
     		<div class="content-box">
     			<h5>My Social Media</h5>
     			<ul type="none">
-    				<li><i class="fab fa-whatsapp"></i><a href="https://wa.me/+6285536363146" target="_blank">  Whatsapp</a></li>
-    				<li><i class="fab fa-telegram-plane"></i><a href="https://t.me/IdReturned1ExitStatus" target="_blank">  Telegram</a></li>
+    				<li><i class="fab fa-whatsapp"></i><a href="" target="">  Whatsapp</a></li>
+    				<li><i class="fab fa-telegram-plane"></i><a href="" target="">  Telegram</a></li>
     				<li><i class="fab fa-instagram"></i><a href="https://instagram.com/khff.athll?utm_medium=copy_link" target="_blank">  Instagram</a></li>
     				<li><i class="fab fa-facebook"></i><a href="https://www.facebook.com/aakhif.athallah" target="_blank">  Facebook</a></li>
     				<li><i class="fab fa-github"></i><a href="https://github.com/Khip01" target="_blank">  Github</a></li>
     			</ul>
     		</div>
     		<div class="content-box">
-    			<h5>Kritik, Saran & Sponsor</h5>
+    			<h5>Suggestions & Sponsors</h5>
     			<p>
-    				Segera Hubungi <a href="#">Saya</a>.
+    				Immediately contact <a href="#">me</a>.
     			</p>
     		</div>
     	</div>
+    <br>
+    Portfolio ver.1.5.0 @khip01_2021 <a href="changelogs/changelogs.html" target="_blank">Latest Change</a>
     </section>
-    </div>
+    </div> <!-- contact -->
 
     <!-- JS -->
     <!-- import js-->
@@ -217,5 +667,21 @@
     });
     </script>
 
+    <!-- Import GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".wordCarousel", {
+            scrollTrigger: {
+                trigger: ".wordCarousel",
+                start: "-90px 0",
+                end: "+=300",
+                markers: false,
+                toggleClass: "white"
+            }
+        })
+    </script>
 </body>
 </html>
